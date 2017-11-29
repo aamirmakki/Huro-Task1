@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Humanoid First Task}
+\author{Aamir Ahmad Makki }
+\date{29 November 2017}
+
+\begin{document}
+\maketitle
+In this document we will find the value of the integral $$\int_{-{\infty}}^{{\infty}} {e^{-x^2}} $$
+
+First note that
+$$({\int_{-{\infty}}^{{\infty}} {e^{-x^2}} dx})^2 = \int_{-{\infty}}^{{\infty}}\int_{-{\infty}}^{{\infty}} {e^{-{x^2}-{y^2}}}dxdy$$
+The integral on the left hand side can be rewritten in polar co-ordinates as
+
+$$\int_{{0}}^{{2\pi}} \int_{0}^{{\infty}}{e^{-r^2}}rdrd\theta$$
+
+Upon substituting $u$ for $r^2$, the integral becomes
+
+$$\int_{{0}}^{{2\pi}} \int_{0}^{{\infty}}\frac{e^{-u}}{2}dud\theta$$
+
+This integral can easily be seen to be equal to $\pi$.
+
+
+Therefore the original integral equals $\sqrt{\pi}$
+
+\end{document}
+
